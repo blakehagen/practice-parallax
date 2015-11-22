@@ -1,0 +1,84 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+}
+
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax_layer_base {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  /*border: 1px solid red;*/
+}
+
+.parallax_layer_back {
+  transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px);
+}
+
+.parallax_layer_back { 
+    transform: translateZ(-1px) scale(2); 
+    /*border: 1px solid orange;*/
+}
+
+.parallax_layer_deep { 
+    transform: translateZ(-2px) scale(3); 
+}
+
+h4 {
+    font-size: 40px;
+    font-family: "Myriad Set Pro", sans-serif;
+    margin: 30px 0;
+    color: rgba(0,0,0,1);
+}
+
+.title {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100px;
+    background-color:rgba(255,255,255,.5);
+    text-align: center;
+}
+
+.content {
+    margin-top: 100vh;
+    width: 100%;
+    /*opacity: .5;*/
+    height: 80vh;
+    background-color: white;
+    border: 1px solid forestgreen;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+}
+
+
